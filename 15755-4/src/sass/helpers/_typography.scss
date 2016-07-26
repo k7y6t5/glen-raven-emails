@@ -1,0 +1,38 @@
+/**
+ * Typography
+ */
+
+.alpha {
+  margin: 0 0 ($font-size-alpha * 0.5);
+  font-size: $font-size-alpha;
+  font-weight: 100;
+  line-height: ($font-size-alpha * 1.4);
+
+  sup {
+    font-weight: 400;
+  }
+}
+
+.beta {
+
+}
+
+.gamma {
+
+}
+
+.delta {
+  font-size: $font-size-delta;
+}
+
+.epsilon {
+  font-size: $font-size-epsilon;
+}
+
+.zeta {
+  font-size: $font-size-zeta;
+}
+
+.underline {
+  text-decoration: underline;
+}

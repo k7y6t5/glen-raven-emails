@@ -1,0 +1,254 @@
+/**
+ * Widths
+ *
+ * $width-full, $width-gutter, and $width-core are required
+ */
+/**
+ * Typography
+ *
+ * $font-family-default is required
+ */
+/**
+ * Font sizes
+ *
+ * $font-size-default is required
+ */
+/**
+ * Line height
+ *
+ * $line-height-default is required
+ */
+/**
+ * Colors
+ *
+ * $color-default is required
+ */
+/**
+ * Elements
+ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100% !important;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6a6a6a;
+}
+
+table tr,
+table td {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+a {
+  border: none;
+  outline: none;
+  text-decoration: none !important;
+}
+
+a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #6a6a6a;
+}
+
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: #373737;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #6a6a6a;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+img {
+  height: auto;
+  line-height: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+sup {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1;
+}
+
+/**
+ * Colors
+ */
+.color-default {
+  color: #6a6a6a;
+}
+
+.color-grey-dark {
+  color: #3d3d3d;
+}
+
+.bg-default {
+  background-color: #6a6a6a;
+}
+
+/**
+ * Layout
+ */
+.width-full {
+  width: 600px;
+}
+
+.width-gutter {
+  width: 40px;
+}
+
+.width-core {
+  width: 520px;
+}
+
+.width-full--half {
+  width: 300px;
+}
+
+.width-core--half {
+  width: 260px;
+}
+
+.block {
+  display: block;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+/**
+ * Typography
+ */
+.alpha {
+  margin: 0 0 18px;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 50.4px;
+}
+
+.alpha sup {
+  font-weight: 400;
+}
+
+.delta {
+  font-size: 14px;
+}
+
+.epsilon {
+  font-size: 12px;
+}
+
+.zeta {
+  font-size: 11px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/**
+ * Client-specific Styles
+ */
+#outlook a {
+  padding: 0;
+}
+
+.gmail-zoom-fix {
+  display: none;
+  white-space: nowrap;
+  font: 15px courier;
+  line-height: 0;
+}
+
+/**
+ * Buttons
+ */
+.btn {
+  display: block;
+  width: 130px;
+  height: 50px;
+  line-height: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/**
+ * Footer
+ */
+.footer {
+  background-color: #909190;
+}
+
+.footer__link {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer__legal {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 18.7px;
+  text-transform: uppercase;
+  color: #cdcdcd;
+}
+
+.footer__legal .link-override,
+.footer__legal .link-override a {
+  color: #cdcdcd !important;
+}

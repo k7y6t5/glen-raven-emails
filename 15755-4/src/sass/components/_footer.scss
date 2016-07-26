@@ -1,0 +1,27 @@
+/**
+ * Footer
+ */
+
+.footer {
+  background-color: #909190;
+}
+
+.footer__link {
+  font-family: $font-family-regular;
+  font-size: $font-size-epsilon;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer__legal {
+  font-family: $font-family-regular;
+  font-size: $font-size-zeta;
+  line-height: ($font-size-zeta * 1.7);
+  text-transform: uppercase;
+  color: #cdcdcd;
+
+  .link-override,
+  .link-override a {
+    color: #cdcdcd !important;
+  }
+}
