@@ -1,0 +1,27 @@
+/**
+ * Footer
+ */
+
+.footer {
+  background-color: #ffffff;
+}
+
+.footer__link {
+  font-family: $font-family-default;
+  font-size: $font-size-epsilon;
+  color: $color-footer-text;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.footer__legal {
+  font-family: $font-family-default;
+  font-size: $font-size-zeta;
+  line-height: ($font-size-zeta * 1.7);
+  color: $color-footer-text;
+
+  .link-override,
+  .link-override a {
+    color: $color-footer-text !important;
+  }
+}

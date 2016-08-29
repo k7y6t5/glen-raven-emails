@@ -1,0 +1,95 @@
+/**
+ * Elements
+ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100% !important;
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  color: $color-default;
+  letter-spacing: 0.25px;
+}
+
+table tr,
+table td {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: calc(#{$font-size-default} + 10px);
+  line-height: $line-height-default;
+}
+
+a {
+  border: none;
+  outline: none;
+  text-decoration: none !important;
+}
+
+a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: $color-default;
+}
+
+// wondering if :active and :visited should be moved to the <head>
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: darken($color-default, 20%);
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: $color-default;
+}
+
+img {
+  height: auto;
+  line-height: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+sup {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1;
+}
