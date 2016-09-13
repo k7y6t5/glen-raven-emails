@@ -1,0 +1,16 @@
+/**
+ * Client-specific Styles
+ */
+
+#outlook a {
+  padding: 0; // Force Outlook to provide a "view in browser" button.
+}
+
+// Prevent Gmail from using the "smooshed" modified view
+// http://freshinbox.com/blog/gmail-on-ios-increases-font-size-on-some-emails/
+.gmail-zoom-fix {
+  display: none;
+  white-space: nowrap;
+  font: 15px courier;
+  line-height: 0;
+}
