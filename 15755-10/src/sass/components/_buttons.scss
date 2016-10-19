@@ -1,0 +1,32 @@
+/**
+ * Buttons
+ *
+ * For rectangular buttons, apply .btn to the wrapping <td>
+ * and .btn__link to the child <a>
+ */
+
+.btn {
+  height: 50px;
+  vertical-align: middle;
+  background-color: $color-green;
+
+  @media (max-width: $width-full) {
+    width: 100% !important;
+  }
+}
+
+.btn-bumper {
+  @media (max-width: $width-full) {
+    display: none !important;
+    width: 0 !important;
+  }
+}
+
+.btn__link {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  color: $color-white;
+  background-color: $color-green;
+  text-align: center;
+}

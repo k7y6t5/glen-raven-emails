@@ -1,0 +1,19 @@
+/**
+ * Blockquote
+ *
+ * I'm only calling this a blockqoute because it requires a special
+ * layout that is dependant on the text above it. Which is part of an image.
+ */
+
+.blockquote__bumper {
+  @media (max-width: $width-full) {
+    display: none;
+    width: 0 !important;
+  }
+}
+
+.blockquote__text {
+  @media (max-width: $width-full) {
+    width: 100% !important;
+  }
+}

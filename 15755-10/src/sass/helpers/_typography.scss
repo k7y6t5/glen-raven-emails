@@ -1,0 +1,43 @@
+/**
+ * Typography
+ */
+
+.alpha {
+  margin: 0 0 ($font-size-alpha * 0.5);
+  font-size: $font-size-alpha;
+  line-height: ($font-size-alpha * 1.4);
+}
+
+.beta {
+  margin: 0 0 ($font-size-default * 1.8);
+  font-size: $font-size-beta;
+  line-height: ($font-size-beta * 1.4);
+}
+
+.gamma {
+  font-size: $font-size-gamma;
+}
+
+.delta {
+  font-size: $font-size-delta;
+}
+
+.delta {
+  font-size: $font-size-epsilon;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: $font-weight-bold;
+}
+
+.italic {
+  font-style: italic;
+}
