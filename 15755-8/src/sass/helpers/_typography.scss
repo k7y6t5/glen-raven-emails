@@ -1,0 +1,63 @@
+/**
+ * Typography
+ */
+
+.alpha {
+  margin: 0 0 ($font-size-alpha * 0.5);
+  font-size: $font-size-alpha;
+  font-weight: 100;
+  line-height: ($font-size-alpha * 1.4);
+
+  sup {
+    font-weight: 400;
+  }
+}
+
+.beta {
+
+}
+
+.gamma {
+
+}
+
+.delta {
+  font-size: $font-size-delta;
+}
+
+.epsilon {
+  font-family: $font-family-regular;
+  margin: 0 0 ($font-size-epsilon * 0.5);
+  font-size: $font-size-epsilon;
+  font-weight: 700;
+  line-height: ($font-size-epsilon * 1.5);
+  letter-spacing: 0.25px;
+
+  sup {
+    font-weight: 400;
+  }
+  &.low-line-height {
+    line-height: ($font-size-epsilon * 1.4);
+  }
+}
+
+.zeta {
+  font-size: $font-size-zeta;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.delimiter {
+  font-size: $font-size-epsilon;
+  vertical-align: middle;
+}
+
+.weight-bold {
+  font-weight: 600;
+}
