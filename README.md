@@ -6,9 +6,11 @@ This repository contains Glen Raven emails.
 
 When saving to the project folder on Data2, please use this structure:
 
+```
 {project}
   - html
     - build
       - {build files} (no node_modules or dist)
     - to client
       - html.zip (contains all files in dist)
+```
