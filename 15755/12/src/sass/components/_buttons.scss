@@ -1,0 +1,15 @@
+/**
+ * Buttons
+ */
+
+.btn {
+  display: block;
+  width: 130px;
+  height: 50px;
+  line-height: 50px;
+  font-family: $font-family-regular;
+  font-size: $font-size-epsilon;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}

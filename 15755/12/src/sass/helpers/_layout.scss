@@ -1,0 +1,30 @@
+/**
+ * Layout
+ */
+.width-full {
+  width: $width-full; // edge to edge
+}
+
+.width-gutter {
+  width: $width-gutter; // 1 gutter
+}
+
+.width-core {
+  width: $width-core; // .width-full - (.width-gutter * 2)
+}
+
+.width-full--half {
+  width: ($width-full * 0.5);
+}
+
+.width-core--half {
+  width: ($width-core * 0.5);
+}
+
+.block {
+  display: block;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
