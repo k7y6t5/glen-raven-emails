@@ -1,0 +1,35 @@
+/**
+ * Client-specific Styles
+ */
+
+#outlook a {
+  padding: 0; // Force Outlook to provide a "view in browser" button.
+}
+
+// Prevent Gmail from using the "smooshed" modified view
+// http://freshinbox.com/blog/gmail-on-ios-increases-font-size-on-some-emails/
+.gmail-zoom-fix {
+  display: none;
+  white-space: nowrap;
+  font: 15px courier;
+  line-height: 0;
+}
+
+// Outlook 2013 and 2016 will insert an extra list item when an <ol> or <ul> is the last child
+// Apply .list-fix to an empty <div> below the offending <ol> or <ul>
+// https://knowledge.hubspot.com/articles/kcs_article/email/why-is-there-an-extra-bullet-point-in-my-email-when-i-view-it-in-outlook-2013
+.list-fix {
+  display: none;
+}
+
+// Prevent minimum font-size
+// https://www.campaignmonitor.com/blog/how-to/2010/12/save-your-layout-by-overriding-the-minimum-font-size-on-the-iphone-and/
+td,
+div,
+h1, h2, h3, h4, h5, h6,
+p,
+li,
+a,
+span {
+  -webkit-text-size-adjust: none;
+}

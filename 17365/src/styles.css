@@ -1,0 +1,340 @@
+/**
+ * Widths
+ *
+ * $width-full, $width-gutter, and $width-core are required
+ */
+/**
+ * Typography
+ *
+ * $font-family-default is required
+ *
+ * http://rachaelmoore.name/posts/design/css/web-safe-helvetica-font-stack/
+ */
+/**
+ * Font weights
+ *
+ * $font-weight-default is required
+ */
+/**
+ * Font sizes
+ *
+ * $font-size-default is required
+ */
+/**
+ * Line height
+ *
+ * $line-height-default is required
+ */
+/**
+ * Colors
+ *
+ * $color-default is required
+ */
+/**
+ * Elements
+ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100% !important;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18.2px;
+  color: #414042;
+}
+
+table tr,
+table td {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  color: #414042;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 20.8px;
+  line-height: 18.2px;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 13px;
+  color: #414042;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 20.8px;
+}
+
+p + ul {
+  margin-top: -10.4px;
+}
+
+li {
+  line-height: 18.2px;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 13px;
+  color: #414042;
+}
+
+a {
+  border: none;
+  outline: none;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  text-decoration: none !important;
+}
+
+a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #414042;
+}
+
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: #0e0e0e;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #414042;
+}
+
+img {
+  height: auto;
+  line-height: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+sup {
+  line-height: 1;
+}
+
+/**
+ * Colors
+ */
+.color-default {
+  color: #414042;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.bg-light-grey {
+  background-color: #d9d9d9;
+}
+
+.bg-dark-grey {
+  background-color: #414042;
+}
+
+.bg-page {
+  background-color: #eeeeee;
+}
+
+.bg-main {
+  background-color: #ffffff;
+}
+
+@media (min-width: 1px) {
+  .link-override,
+  .link-override a {
+    color: #414042 !important;
+  }
+}
+
+/**
+ * Layout
+ *
+ * a min-width property is needed to fix Android's handling of empty <td>s
+ */
+.width-full {
+  width: 600px;
+  min-width: 600px;
+}
+
+.width-gutter {
+  width: 30px;
+  min-width: 30px;
+}
+
+.width-core {
+  width: 540px;
+  min-width: 540px;
+}
+
+.width-full--half {
+  width: 300px;
+}
+
+.width-core--half {
+  width: 270px;
+}
+
+.block {
+  display: block;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+.snug-bottom {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.flat {
+  line-height: 0;
+  font-size: 0;
+}
+
+/**
+ * Typography
+ */
+.alpha {
+  margin: 0 0 6.5px;
+  line-height: 14.3px;
+  font-size: 13px;
+}
+
+.beta {
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+  font-size: 12px;
+}
+
+.gamma {
+  font-size: 11px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/**
+ * Client-specific Styles
+ */
+#outlook a {
+  padding: 0;
+}
+
+.gmail-zoom-fix {
+  display: none;
+  white-space: nowrap;
+  font: 15px courier;
+  line-height: 0;
+}
+
+.list-fix {
+  display: none;
+}
+
+td,
+div,
+h1, h2, h3, h4, h5, h6,
+p,
+li,
+a,
+span {
+  -webkit-text-size-adjust: none;
+}
+
+/**
+ * Buttons
+ *
+ * For rectangular buttons, apply .btn to the wrapping <td>
+ * and .btn__link to the child <a>
+ */
+.btn {
+  vertical-align: middle;
+  background-color: black;
+}
+
+.btn__link {
+  display: block;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+/**
+ * Footer
+ */
+.horizontal-rule {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  height: 1px;
+  max-height: 1px;
+  line-height: 1px;
+  font-size: 0;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #414042;
+}
+
+/**
+ * Intro
+ */
+.c_intro {
+  line-height: 21.84px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #f3f3f3;
+}
+
+.c_intro sup {
+  font-size: 7.8px;
+}

@@ -1,0 +1,417 @@
+/**
+ * Widths
+ *
+ * $width-full, $width-gutter, and $width-core are required
+ */
+/**
+ * Typography
+ *
+ * $font-family-default is required
+ *
+ * http://rachaelmoore.name/posts/design/css/web-safe-helvetica-font-stack/
+ */
+/**
+ * Font weights
+ *
+ * $font-weight-default is required
+ */
+/**
+ * Font sizes
+ *
+ * $font-size-default is required
+ */
+/**
+ * Line height
+ *
+ * $line-height-default is required
+ */
+/**
+ * Colors
+ *
+ * $color-default is required
+ */
+/**
+ * Elements
+ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100% !important;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: #6a6a6a;
+}
+
+table tr,
+table td {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 28.8px;
+  line-height: 25.6px;
+}
+
+ol,
+ul {
+  padding-left: 16px;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 28.8px;
+}
+
+p + ul {
+  margin-top: -12.8px;
+}
+
+li {
+  margin-bottom: 28.8px;
+  line-height: 25.6px;
+}
+
+a {
+  border: none;
+  outline: none;
+  text-decoration: none !important;
+}
+
+a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #6a6a6a;
+}
+
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: #373737;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #6a6a6a;
+}
+
+img {
+  height: auto;
+  line-height: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  img {
+    width: 100% !important;
+  }
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+sup {
+  line-height: 1;
+}
+
+/**
+ * Colors
+ */
+.color-default {
+  color: #6a6a6a;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-green {
+  color: #aebc7c;
+}
+
+.bg-page {
+  background-color: #eeeeee;
+}
+
+.bg-main {
+  background-color: #ffffff;
+}
+
+.bg-black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media (min-width: 1px) {
+  .link-override,
+  .link-override a {
+    color: #6a6a6a !important;
+  }
+}
+
+/**
+ * Layout
+ *
+ * a min-width property is needed to fix Android's handling of empty <td>s
+ */
+.width-full {
+  width: 600px;
+  min-width: 600px;
+}
+
+@media (max-width: 600px) {
+  .width-full {
+    width: 300px !important;
+    min-width: 300px !important;
+  }
+}
+
+.width-gutter {
+  width: 90px;
+  min-width: 90px;
+}
+
+@media (max-width: 600px) {
+  .width-gutter {
+    width: 22.5px !important;
+    min-width: 22.5px !important;
+  }
+}
+
+.width-core {
+  width: 420px;
+  min-width: 420px;
+}
+
+@media (max-width: 600px) {
+  .width-core {
+    width: 255px !important;
+    min-width: 255px !important;
+  }
+}
+
+.width-full--half {
+  width: 300px;
+}
+
+.width-core--half {
+  width: 210px;
+}
+
+.block {
+  display: block;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+.snug-bottom {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+@media (max-width: 600px) {
+  .br {
+    display: block;
+  }
+}
+
+/**
+ * Typography
+ */
+.alpha {
+  margin: 0 0 9px;
+  font-size: 18px;
+  line-height: 25.2px;
+}
+
+.beta {
+  margin: 0 0 28.8px;
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+.gamma {
+  font-size: 16px;
+}
+
+.delta {
+  font-size: 12px;
+}
+
+.delta {
+  font-size: 11px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/**
+ * Client-specific Styles
+ */
+#outlook a {
+  padding: 0;
+}
+
+.gmail-zoom-fix {
+  display: none;
+  white-space: nowrap;
+  font: 15px courier;
+  line-height: 0;
+}
+
+.list-fix {
+  display: none;
+}
+
+td,
+div,
+h1, h2, h3, h4, h5, h6,
+p,
+li,
+a,
+span {
+  -webkit-text-size-adjust: none;
+}
+
+/**
+ * Blockquote
+ *
+ * I'm only calling this a blockqoute because it requires a special
+ * layout that is dependant on the text above it. Which is part of an image.
+ */
+@media (max-width: 600px) {
+  .blockquote__bumper {
+    display: none;
+    width: 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .blockquote__text {
+    width: 100% !important;
+  }
+}
+
+/**
+ * Buttons
+ *
+ * For rectangular buttons, apply .btn to the wrapping <td>
+ * and .btn__link to the child <a>
+ */
+.btn {
+  height: 50px;
+  vertical-align: middle;
+  background-color: #aebc7c;
+}
+
+@media (max-width: 600px) {
+  .btn {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn-bumper {
+    display: none !important;
+    width: 0 !important;
+  }
+}
+
+.btn__link {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  background-color: #aebc7c;
+  text-align: center;
+}
+
+/**
+ * Footer
+ */
+.footer {
+  background-color: #f6f5f5;
+}
+
+.footer__link {
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 12px;
+  color: #6a6e71;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.footer__legal {
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 11px;
+  line-height: 18.7px;
+  color: #6a6e71;
+}
+
+.footer__legal .link-override,
+.footer__legal .link-override a {
+  color: #6a6e71 !important;
+}
+
+.horizontal-rule {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  height: 1px;
+  max-height: 1px;
+  line-height: 1px;
+  font-size: 0;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #6a6a6a;
+}

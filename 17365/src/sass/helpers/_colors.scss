@@ -1,0 +1,36 @@
+/**
+ * Colors
+ */
+
+.color-default {
+  color: $color-default;
+}
+
+.color-white {
+  color: $color-white;
+}
+
+.bg-light-grey {
+  background-color: $color-light-grey;
+}
+
+.bg-dark-grey {
+  background-color: $color-dark-grey;
+}
+
+.bg-page {
+  background-color: #eeeeee;
+}
+
+.bg-main {
+  background-color: $color-white;
+}
+
+// override iOS faux-link color
+// stuff in MQ to make it appear in <head>
+.link-override,
+.link-override a {
+  @media (min-width: 1px) {
+    color: $color-default !important;
+  }
+}

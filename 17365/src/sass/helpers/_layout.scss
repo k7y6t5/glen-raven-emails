@@ -1,0 +1,45 @@
+/**
+ * Layout
+ *
+ * a min-width property is needed to fix Android's handling of empty <td>s
+ */
+.width-full {
+  width: $width-full; // edge to edge
+  min-width: $width-full;
+}
+
+.width-gutter {
+  width: $width-gutter; // 1 gutter
+  min-width: $width-gutter;
+}
+
+.width-core {
+  width: $width-core; // .width-full - (.width-gutter * 2)
+  min-width: $width-core;
+}
+
+.width-full--half {
+  width: ($width-full * 0.5);
+}
+
+.width-core--half {
+  width: ($width-core * 0.5);
+}
+
+.block {
+  display: block;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+.snug-bottom {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.flat {
+  line-height: 0;
+  font-size: 0;
+}
