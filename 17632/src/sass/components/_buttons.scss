@@ -1,0 +1,12 @@
+/**
+ * Buttons
+ *
+ * For rectangular buttons, apply .btn to the wrapping <td>
+ * and .btn__link to the child <a>
+ */
+
+.btn {
+  @media only screen and (max-width: $width-full-px) {
+    width: 90%;
+  }
+}

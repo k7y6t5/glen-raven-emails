@@ -1,0 +1,455 @@
+/**
+ * Widths
+ *
+ * $width-full, $width-gutter, and $width-core are required
+ */
+/**
+ * Typography
+ *
+ * $font-family-default is required
+ *
+ * http://rachaelmoore.name/posts/design/css/web-safe-helvetica-font-stack/
+ */
+/**
+ * Font weights
+ *
+ * $font-weight-default is required
+ */
+/**
+ * Font sizes
+ *
+ * $font-size-default is required
+ */
+/**
+ * Line height
+ *
+ * $line-height-default is required
+ */
+/**
+ * Colors
+ *
+ * $color-default is required
+ */
+/**
+ * Elements
+ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100% !important;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  color: #707271;
+}
+
+table {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+table tr,
+table td {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  color: #707271;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 28.8px;
+  line-height: 25.2px;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 18px;
+  color: #707271;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 28.8px;
+}
+
+p + ul {
+  margin-top: -14.4px;
+}
+
+li {
+  line-height: 25.2px;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 18px;
+  color: #707271;
+}
+
+a {
+  border: none;
+  outline: none;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  text-decoration: none !important;
+}
+
+a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #707271;
+}
+
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: #3d3f3e;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #707271;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  line-height: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    height: auto !important;
+  }
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+sup {
+  line-height: 1;
+}
+
+/**
+ * Colors
+ */
+.color-default {
+  color: #707271;
+}
+
+.color-grey-light {
+  color: #a6a8ab;
+}
+
+.color-peach {
+  color: #edad92;
+}
+
+.color-lavendar {
+  color: #98adbc;
+}
+
+.color-green {
+  color: #aab579;
+}
+
+.color-dark {
+  color: #231f20;
+}
+
+.bg-page {
+  background-color: #f2f2f2;
+}
+
+.bg-main {
+  background-color: #f2f2f2;
+}
+
+.link-override,
+.link-override a {
+  color: #707271 !important;
+}
+
+@media (min-width: 1px) {
+  .link-override,
+  .link-override a {
+    color: #707271 !important;
+  }
+}
+
+@media (min-width: 1px) {
+  .link-override.color-grey-light,
+  .link-override.color-grey-light a {
+    color: #a6a8ab !important;
+  }
+}
+
+/**
+ * Layout
+ *
+ * a min-width property is needed to fix Android's handling of empty <td>s
+ */
+.width-main {
+  width: 600px;
+  min-width: 600px;
+}
+
+@media (max-width: 600px) {
+  .width-main {
+    width: 96% !important;
+    min-width: 96% !important;
+  }
+}
+
+.width-full {
+  width: 100%;
+  min-width: 100%;
+}
+
+.width-gutter {
+  width: 8.33333%;
+  min-width: 8.33333%;
+}
+
+@media (max-width: 600px) {
+  .width-gutter {
+    width: 4.16667% !important;
+    min-width: 4.16667% !important;
+  }
+}
+
+.width-core {
+  width: 83.33333%;
+  min-width: 83.33333%;
+}
+
+@media (max-width: 600px) {
+  .width-core {
+    width: 91.66667% !important;
+    min-width: 91.66667% !important;
+  }
+}
+
+.block {
+  display: block;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+.space-above {
+  margin-top: 20px !important;
+  padding-top: 20px !important;
+}
+
+.space-above-small {
+  margin-top: 10px !important;
+  padding-top: 10px !important;
+}
+
+.snug-bottom {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.space-under > td {
+  margin-bottom: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.space-under-small > td {
+  margin-bottom: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+/**
+ * Typography
+ */
+.zeta {
+  margin: 0 0 11.5px;
+  line-height: 25.3px;
+  font-size: 23px;
+}
+
+.alpha {
+  margin: 0 0 9px;
+  line-height: 19.8px;
+  font-size: 18px;
+}
+
+.beta {
+  display: block;
+  margin: 0 0 7.5px;
+  line-height: 19.5px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.charlie {
+  margin: 0 0 6.5px;
+  line-height: 22.75px;
+  font-size: 13px;
+}
+
+.gamma {
+  margin: 0 0 6px;
+  line-height: 13.2px;
+  font-size: 12px;
+}
+
+.gamma.-ls-1-3 {
+  letter-spacing: 1.3px;
+}
+
+.gamma.-lh-1-5 {
+  line-height: 18px;
+}
+
+.delta {
+  margin: 0;
+  line-height: 17.6px;
+  font-size: 11px;
+}
+
+.delta.-lh-1-3 {
+  line-height: 14.3px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.tt-none {
+  text-transform: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.ls-none {
+  letter-spacing: 0;
+}
+
+/**
+ * Client-specific Styles
+ */
+#outlook a {
+  padding: 0;
+}
+
+.gmail-zoom-fix {
+  display: none;
+  white-space: nowrap;
+  font: 15px courier;
+  line-height: 0;
+}
+
+.list-fix {
+  display: none;
+}
+
+td,
+div,
+h1, h2, h3, h4, h5, h6,
+p,
+li,
+a,
+span {
+  -webkit-text-size-adjust: none;
+}
+
+/**
+ * Buttons
+ *
+ * For rectangular buttons, apply .btn to the wrapping <td>
+ * and .btn__link to the child <a>
+ */
+@media only screen and (max-width: 600px) {
+  .btn {
+    width: 90%;
+  }
+}
+
+/**
+ * Footer
+ */
+.horizontal-rule {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  height: 1px;
+  max-height: 1px;
+  line-height: 1px;
+  font-size: 0;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #707271;
+}

@@ -1,0 +1,63 @@
+/**
+ * Widths
+ *
+ * $width-full, $width-gutter, and $width-core are required
+ */
+$width-full-raw: 600;
+$width-gutter-raw: 50;
+$width-gutter: percentage($width-gutter-raw / $width-full-raw);
+$width-full-px: #{$width-full-raw}px;
+$width-full: 100%;
+$width-core: $width-full - ($width-gutter * 2);
+
+/**
+ * Typography
+ *
+ * $font-family-default is required
+ *
+ * http://rachaelmoore.name/posts/design/css/web-safe-helvetica-font-stack/
+ */
+$font-family-regular: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+$font-family-default: $font-family-regular;
+
+/**
+ * Font weights
+ *
+ * $font-weight-default is required
+ */
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-weight-default: $font-weight-regular;
+
+/**
+ * Font sizes
+ *
+ * $font-size-default is required
+ */
+$font-size-zeta: 23px;
+$font-size-alpha: 18px;
+$font-size-beta: 15px;
+$font-size-charlie: 13px;
+$font-size-gamma: 12px;
+$font-size-delta: 11px;
+$font-size-default: $font-size-alpha;
+
+/**
+ * Line height
+ *
+ * $line-height-default is required
+ */
+$line-height-default: ($font-size-default * 1.4);
+
+/**
+ * Colors
+ *
+ * $color-default is required
+ */
+$color-default: #707271;
+$color-white: #ffffff;
+$color-grey-light: #a6a8ab;
+$color-peach: #edad92;
+$color-lavendar: #98adbc;
+$color-green: #aab579;
+$color-dark: #231f20;

@@ -1,0 +1,52 @@
+/**
+ * Colors
+ */
+
+.color-default {
+  color: $color-default;
+}
+
+.color-grey-light {
+  color: $color-grey-light;
+}
+
+.color-peach {
+  color: $color-peach;
+}
+
+.color-lavendar {
+  color: $color-lavendar;
+}
+
+.color-green {
+  color: $color-green;
+}
+
+.color-dark {
+  color: $color-dark;
+}
+
+.bg-page {
+  background-color: #f2f2f2;
+}
+
+.bg-main {
+  background-color: #f2f2f2;
+}
+
+// override iOS faux-link color
+// stuff in MQ to make it appear in <head>
+.link-override,
+.link-override a {
+  color: $color-default !important;
+  @media (min-width: 1px) {
+    color: $color-default !important;
+  }
+}
+
+.link-override.color-grey-light,
+.link-override.color-grey-light a {
+  @media (min-width: 1px) {
+    color: $color-grey-light !important;
+  }
+}

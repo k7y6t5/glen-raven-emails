@@ -1,0 +1,93 @@
+/**
+ * Layout
+ *
+ * a min-width property is needed to fix Android's handling of empty <td>s
+ */
+.width-main {
+  width: $width-full-px; // edge to edge, expressed in px to center email on wide screens
+  min-width: $width-full-px;
+
+  @media (max-width: $width-full-px) {
+    width: 96% !important;
+    min-width: 96% !important;
+  }
+}
+
+.width-full {
+  width: $width-full; // edge to edge
+  min-width: $width-full;
+}
+
+.width-gutter {
+  width: $width-gutter; // 1 gutter
+  min-width: $width-gutter;
+
+  @media (max-width: $width-full-px) {
+    width: ($width-gutter * 0.5) !important;
+    min-width: ($width-gutter * 0.5) !important;
+  }
+}
+
+.width-core {
+  width: $width-core; // .width-full - (.width-gutter * 2)
+  min-width: $width-core;
+
+  @media (max-width: $width-full-px) {
+    width: ($width-full - $width-gutter) !important; // since gutters are cut in half
+    min-width: ($width-full - $width-gutter) !important; // since gutters are cut in half
+  }
+}
+
+.block {
+  display: block;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+// Spacing
+.space-above {
+  margin-top: 20px !important;
+  padding-top: 20px !important;
+}
+.space-above-small {
+  margin-top: 10px !important;
+  padding-top: 10px !important;
+}
+
+.snug-bottom {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.space-under > td {
+  margin-bottom: 20px !important;
+  padding-bottom: 20px !important;
+}
+.space-under-small > td {
+    margin-bottom: 5px !important;
+    padding-bottom: 5px !important;
+  }
+
+//Text alignment
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+//Padding
+.pl-5 {
+  padding-left: 5px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
