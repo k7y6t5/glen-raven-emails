@@ -42,6 +42,10 @@
   display: block;
 }
 
+.inline-block {
+  display: inline-block !important;
+}
+
 .valign-middle {
   vertical-align: middle;
 }
@@ -61,33 +65,23 @@
   padding-bottom: 0 !important;
 }
 
+//Need to select children tds as this won't affect trs
 .space-under > td {
   margin-bottom: 20px !important;
   padding-bottom: 20px !important;
 }
 .space-under-small > td {
     margin-bottom: 5px !important;
-    padding-bottom: 5px !important;
+    padding-bottom: 0px !important;
   }
-
-//Text alignment
-.text-center {
-  text-align: center;
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
-.text-justify {
-  text-align: justify;
-}
 
 //Padding
 .pl-5 {
   padding-left: 5px;
 }
-.pl-10 {
-  padding-left: 10px;
+
+//Relative Top Negative 100px - Needed for this particular header
+.rel-top-neg-100 {
+  position: relative !important;
+  top: -100px !important;
 }

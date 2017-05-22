@@ -25,6 +25,7 @@ $font-family-default: $font-family-regular;
  *
  * $font-weight-default is required
  */
+$font-weight-light: 200;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
 $font-weight-default: $font-weight-regular;
@@ -34,12 +35,10 @@ $font-weight-default: $font-weight-regular;
  *
  * $font-size-default is required
  */
-$font-size-zeta: 23px;
-$font-size-alpha: 18px;
-$font-size-beta: 15px;
-$font-size-charlie: 13px;
-$font-size-gamma: 12px;
-$font-size-delta: 11px;
+$font-size-alpha: 13px;
+$font-size-beta: 11px;
+$font-size-charlie: 16px;
+$font-size-delta: 23px;
 $font-size-default: $font-size-alpha;
 
 /**

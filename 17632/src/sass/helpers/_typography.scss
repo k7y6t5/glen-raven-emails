@@ -2,15 +2,9 @@
  * Typography
  */
 
-.zeta {
-  margin: 0 0 ($font-size-zeta * 0.5);
-  line-height: ($font-size-zeta * 1.1);
-  font-size: $font-size-zeta;
-}
-
 .alpha {
   margin: 0 0 ($font-size-alpha * 0.5);
-  line-height: ($font-size-alpha * 1.1);
+  line-height: ($font-size-alpha * 1.5);
   font-size: $font-size-alpha;
 }
 
@@ -19,36 +13,12 @@
   margin: 0 0 ($font-size-beta * 0.5);
   line-height: ($font-size-beta * 1.3);
   font-size: $font-size-beta;
-  font-weight: $font-weight-bold;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-.charlie {
-  margin: 0 0 ($font-size-charlie * 0.5);
-  line-height: ($font-size-charlie * 1.75);
-  font-size: $font-size-charlie;
-}
-
-.gamma {
-  margin: 0 0 ($font-size-gamma * 0.5);
-  line-height: ($font-size-gamma * 1.1);
-  font-size: $font-size-gamma;
-  &.-ls-1-3 {
-    letter-spacing: 1.3px;
-  }
-  &.-lh-1-5 {
-    line-height: ($font-size-gamma * 1.5);
-  }
 }
 
 .delta {
   margin: 0;
   line-height: ($font-size-delta * 1.6);
   font-size: $font-size-delta;
-  &.-lh-1-3 {
-    line-height: ($font-size-delta * 1.3);
-  }
 }
 
 .epsilon {
@@ -56,7 +26,7 @@
 }
 
 .zeta {
-
+  
 }
 
 .underline {
@@ -71,18 +41,36 @@
   text-transform: none;
 }
 
-.bold {
-  font-weight: $font-weight-bold;
-}
-
-.fw-normal {
-  font-weight: $font-weight-regular;
-}
-
 .italic {
   font-style: italic;
 }
 
+//Font-weight
+.bold {
+  font-weight: $font-weight-bold;
+}
+.fw-light {
+  font-weight: $font-weight-light !important;
+}
+.fw-regular {
+  font-weight: $font-weight-regular !important;
+}
+
+//Letter Spacing
 .ls-none {
   letter-spacing: 0;
+}
+
+//Text alignment
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
 }

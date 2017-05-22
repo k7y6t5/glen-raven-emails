@@ -42,9 +42,9 @@ body {
 body {
   width: 100% !important;
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 25.2px;
+  line-height: 18.2px;
   color: #707271;
 }
 
@@ -77,26 +77,26 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 28.8px;
-  line-height: 25.2px;
+  margin-bottom: 20.8px;
+  line-height: 18.2px;
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 13px;
   color: #707271;
 }
 
 ul {
   margin-top: 0;
-  margin-bottom: 28.8px;
+  margin-bottom: 20.8px;
 }
 
 p + ul {
-  margin-top: -14.4px;
+  margin-top: -10.4px;
 }
 
 li {
-  line-height: 25.2px;
+  line-height: 18.2px;
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 13px;
   color: #707271;
 }
 
@@ -262,6 +262,10 @@ sup {
   display: block;
 }
 
+.inline-block {
+  display: inline-block !important;
+}
+
 .valign-middle {
   vertical-align: middle;
 }
@@ -288,7 +292,70 @@ sup {
 
 .space-under-small > td {
   margin-bottom: 5px !important;
-  padding-bottom: 5px !important;
+  padding-bottom: 0px !important;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.rel-top-neg-100 {
+  position: relative !important;
+  top: -100px !important;
+}
+
+/**
+ * Typography
+ */
+.alpha {
+  margin: 0 0 6.5px;
+  line-height: 19.5px;
+  font-size: 13px;
+}
+
+.beta {
+  display: block;
+  margin: 0 0 5.5px;
+  line-height: 14.3px;
+  font-size: 11px;
+}
+
+.delta {
+  margin: 0;
+  line-height: 36.8px;
+  font-size: 23px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.tt-none {
+  text-transform: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.fw-light {
+  font-weight: 200 !important;
+}
+
+.fw-regular {
+  font-weight: 400 !important;
+}
+
+.ls-none {
+  letter-spacing: 0;
 }
 
 .text-center {
@@ -305,97 +372,6 @@ sup {
 
 .text-justify {
   text-align: justify;
-}
-
-.pl-5 {
-  padding-left: 5px;
-}
-
-.pl-10 {
-  padding-left: 10px;
-}
-
-/**
- * Typography
- */
-.zeta {
-  margin: 0 0 11.5px;
-  line-height: 25.3px;
-  font-size: 23px;
-}
-
-.alpha {
-  margin: 0 0 9px;
-  line-height: 19.8px;
-  font-size: 18px;
-}
-
-.beta {
-  display: block;
-  margin: 0 0 7.5px;
-  line-height: 19.5px;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-.charlie {
-  margin: 0 0 6.5px;
-  line-height: 22.75px;
-  font-size: 13px;
-}
-
-.gamma {
-  margin: 0 0 6px;
-  line-height: 13.2px;
-  font-size: 12px;
-}
-
-.gamma.-ls-1-3 {
-  letter-spacing: 1.3px;
-}
-
-.gamma.-lh-1-5 {
-  line-height: 18px;
-}
-
-.delta {
-  margin: 0;
-  line-height: 17.6px;
-  font-size: 11px;
-}
-
-.delta.-lh-1-3 {
-  line-height: 14.3px;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.upper {
-  text-transform: uppercase;
-}
-
-.tt-none {
-  text-transform: none;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.fw-normal {
-  font-weight: 400;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.ls-none {
-  letter-spacing: 0;
 }
 
 /**
