@@ -280,12 +280,6 @@ sup {
   font-size: 11px;
 }
 
-.delta {
-  margin: 0;
-  line-height: 36.8px;
-  font-size: 23px;
-}
-
 .underline {
   text-decoration: underline;
 }
@@ -300,14 +294,6 @@ sup {
 
 .bold {
   font-weight: 700;
-}
-
-.fw-light {
-  font-weight: 200 !important;
-}
-
-.fw-regular {
-  font-weight: 400 !important;
 }
 
 .ls-none {
