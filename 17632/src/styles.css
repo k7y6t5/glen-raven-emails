@@ -181,7 +181,7 @@ sup {
   color: #aab579;
 }
 
-.color-dark {
+.color-black {
   color: #231f20;
 }
 
@@ -203,6 +203,11 @@ sup {
   .link-override a {
     color: #707271 !important;
   }
+}
+
+.link-override.color-grey-light,
+.link-override.color-grey-light a {
+  color: #a6a8ab !important;
 }
 
 @media (min-width: 1px) {
@@ -262,10 +267,6 @@ sup {
   display: block;
 }
 
-.inline-block {
-  display: inline-block !important;
-}
-
 .valign-middle {
   vertical-align: middle;
 }
@@ -285,6 +286,10 @@ sup {
   padding-bottom: 0 !important;
 }
 
+.push-bottom {
+  padding-bottom: 10px !important;
+}
+
 .space-under > td {
   margin-bottom: 20px !important;
   padding-bottom: 20px !important;
@@ -298,15 +303,6 @@ sup {
 .space-under-small > td {
   margin-bottom: 5px !important;
   padding-bottom: 0px !important;
-}
-
-.pl-5 {
-  padding-left: 5px;
-}
-
-.rel-top-neg-100 {
-  position: relative !important;
-  top: -100px !important;
 }
 
 /**
@@ -339,10 +335,6 @@ sup {
   text-transform: uppercase;
 }
 
-.tt-none {
-  text-transform: none;
-}
-
 .italic {
   font-style: italic;
 }
@@ -365,14 +357,6 @@ sup {
 
 .ls-1 {
   letter-spacing: 1px;
-}
-
-.ls-1-25 {
-  letter-spacing: 1.25px;
-}
-
-.ls-1-5 {
-  letter-spacing: 1.5px;
 }
 
 .text-center {

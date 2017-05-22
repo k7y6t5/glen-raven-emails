@@ -22,8 +22,8 @@
   color: $color-green;
 }
 
-.color-dark {
-  color: $color-dark;
+.color-black {
+  color: $color-black;
 }
 
 .bg-page {
@@ -46,6 +46,7 @@
 
 .link-override.color-grey-light,
 .link-override.color-grey-light a {
+  color: $color-grey-light !important;
   @media (min-width: 1px) {
     color: $color-grey-light !important;
   }
