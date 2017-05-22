@@ -1,4 +1,9 @@
 /**
+ * Responsive flag
+ *
+ * see helpers/_layout.scss
+ */
+/**
  * Widths
  *
  * $width-full, $width-gutter, and $width-core are required
@@ -227,13 +232,6 @@ sup {
   min-width: 600px;
 }
 
-@media (max-width: 600px) {
-  .width-main {
-    width: 96% !important;
-    min-width: 96% !important;
-  }
-}
-
 .width-full {
   width: 100%;
   min-width: 100%;
@@ -244,23 +242,9 @@ sup {
   min-width: 8.33333%;
 }
 
-@media (max-width: 600px) {
-  .width-gutter {
-    width: 4.16667% !important;
-    min-width: 4.16667% !important;
-  }
-}
-
 .width-core {
   width: 83.33333%;
   min-width: 83.33333%;
-}
-
-@media (max-width: 600px) {
-  .width-core {
-    width: 91.66667% !important;
-    min-width: 91.66667% !important;
-  }
 }
 
 .block {
@@ -271,16 +255,6 @@ sup {
   vertical-align: middle;
 }
 
-.space-above {
-  margin-top: 20px !important;
-  padding-top: 20px !important;
-}
-
-.space-above-small {
-  margin-top: 10px !important;
-  padding-top: 10px !important;
-}
-
 .snug-bottom {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
@@ -288,21 +262,6 @@ sup {
 
 .push-bottom {
   padding-bottom: 10px !important;
-}
-
-.space-under > td {
-  margin-bottom: 20px !important;
-  padding-bottom: 20px !important;
-}
-
-.space-under-med > td {
-  margin-bottom: 10px !important;
-  padding-bottom: 10px !important;
-}
-
-.space-under-small > td {
-  margin-bottom: 5px !important;
-  padding-bottom: 0px !important;
 }
 
 /**

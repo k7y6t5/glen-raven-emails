@@ -7,9 +7,11 @@
   width: $width-full-px; // edge to edge, expressed in px to center email on wide screens
   min-width: $width-full-px;
 
-  @media (max-width: $width-full-px) {
-    width: 96% !important;
-    min-width: 96% !important;
+  @if ($responsive) {
+    @media (max-width: $width-full-px) {
+      width: 96% !important;
+      min-width: 96% !important;
+    }
   }
 }
 
@@ -22,9 +24,11 @@
   width: $width-gutter; // 1 gutter
   min-width: $width-gutter;
 
-  @media (max-width: $width-full-px) {
-    width: ($width-gutter * 0.5) !important;
-    min-width: ($width-gutter * 0.5) !important;
+  @if ($responsive) {
+    @media (max-width: $width-full-px) {
+      width: ($width-gutter * 0.5) !important;
+      min-width: ($width-gutter * 0.5) !important;
+    }
   }
 }
 
@@ -32,9 +36,11 @@
   width: $width-core; // .width-full - (.width-gutter * 2)
   min-width: $width-core;
 
-  @media (max-width: $width-full-px) {
-    width: ($width-full - $width-gutter) !important; // since gutters are cut in half
-    min-width: ($width-full - $width-gutter) !important; // since gutters are cut in half
+  @if ($responsive) {
+    @media (max-width: $width-full-px) {
+      width: ($width-full - $width-gutter) !important; // since gutters are cut in half
+      min-width: ($width-full - $width-gutter) !important; // since gutters are cut in half
+    }
   }
 }
 
@@ -47,32 +53,11 @@
 }
 
 // Spacing
-.space-above {
-  margin-top: 20px !important;
-  padding-top: 20px !important;
-}
-.space-above-small {
-  margin-top: 10px !important;
-  padding-top: 10px !important;
-}
 .snug-bottom {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
+
 .push-bottom {
   padding-bottom: 10px !important;
 }
-
-//Need to select children tds as this won't affect trs
-.space-under > td {
-  margin-bottom: 20px !important;
-  padding-bottom: 20px !important;
-}
-.space-under-med > td {
-  margin-bottom: 10px !important;
-  padding-bottom: 10px !important;
-}
-.space-under-small > td {
-    margin-bottom: 5px !important;
-    padding-bottom: 0px !important;
-  }
