@@ -38,7 +38,8 @@
 // stuff in MQ to make it appear in <head>
 .link-override,
 .link-override a {
-  color: $color-default !important;
+  color: $color-default;
+
   @media (min-width: 1px) {
     color: $color-default !important;
   }
@@ -46,7 +47,8 @@
 
 .link-override.color-grey-light,
 .link-override.color-grey-light a {
-  color: $color-grey-light !important;
+  color: $color-grey-light;
+
   @media (min-width: 1px) {
     color: $color-grey-light !important;
   }

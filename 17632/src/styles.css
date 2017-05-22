@@ -49,7 +49,7 @@ body {
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 400;
-  line-height: 18.2px;
+  line-height: 20.8px;
   color: #707271;
 }
 
@@ -83,10 +83,18 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 20.8px;
-  line-height: 18.2px;
+  line-height: 20.8px;
+  letter-spacing: 1px;
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-size: 13px;
   color: #707271;
+}
+
+div {
+  line-height: 20.8px;
+  letter-spacing: 1px;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 13px;
 }
 
 ul {
@@ -99,7 +107,7 @@ p + ul {
 }
 
 li {
-  line-height: 18.2px;
+  line-height: 20.8px;
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-size: 13px;
   color: #707271;
@@ -171,7 +179,7 @@ sup {
 }
 
 .color-grey-light {
-  color: #a6a8ab;
+  color: #8d8f91;
 }
 
 .color-peach {
@@ -187,7 +195,7 @@ sup {
 }
 
 .color-black {
-  color: #231f20;
+  color: #413a3c;
 }
 
 .bg-page {
@@ -200,7 +208,7 @@ sup {
 
 .link-override,
 .link-override a {
-  color: #707271 !important;
+  color: #707271;
 }
 
 @media (min-width: 1px) {
@@ -212,13 +220,13 @@ sup {
 
 .link-override.color-grey-light,
 .link-override.color-grey-light a {
-  color: #a6a8ab !important;
+  color: #8d8f91;
 }
 
 @media (min-width: 1px) {
   .link-override.color-grey-light,
   .link-override.color-grey-light a {
-    color: #a6a8ab !important;
+    color: #8d8f91 !important;
   }
 }
 
@@ -298,10 +306,6 @@ sup {
 
 .ls-none {
   letter-spacing: 0;
-}
-
-.ls-1 {
-  letter-spacing: 1px;
 }
 
 .text-center {

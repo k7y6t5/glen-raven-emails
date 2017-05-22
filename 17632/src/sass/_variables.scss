@@ -52,7 +52,7 @@ $font-size-default: $font-size-alpha;
  *
  * $line-height-default is required
  */
-$line-height-default: ($font-size-default * 1.4);
+$line-height-default: ($font-size-default * 1.6);
 
 /**
  * Colors
@@ -61,8 +61,8 @@ $line-height-default: ($font-size-default * 1.4);
  */
 $color-default: #707271;
 $color-white: #ffffff;
-$color-grey-light: #a6a8ab;
+$color-black: #413a3c;
+$color-grey-light: #8d8f91;
 $color-peach: #edad92;
 $color-lavendar: #98adbc;
 $color-green: #aab579;
-$color-black: #231f20;
