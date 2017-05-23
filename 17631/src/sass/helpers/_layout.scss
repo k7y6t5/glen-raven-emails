@@ -1,0 +1,56 @@
+/**
+ * Layout
+ *
+ * a min-width property is needed to fix Android's handling of empty <td>s
+ */
+.width-main {
+  width: $width-full-px; // edge to edge, expressed in px to center email on wide screens
+  min-width: $width-full-px;
+
+  @media (max-width: $width-full-px) {
+    width: 96% !important;
+    min-width: 96% !important;
+  }
+}
+
+.width-full {
+  width: $width-full; // edge to edge
+  min-width: $width-full;
+}
+
+.width-gutter {
+  width: $width-gutter; // 1 gutter
+  min-width: $width-gutter;
+
+  @media (max-width: $width-full-px) {
+    width: ($width-gutter * 0.5) !important;
+    min-width: ($width-gutter * 0.5) !important;
+  }
+}
+
+.width-core {
+  width: $width-core; // .width-full - (.width-gutter * 2)
+  min-width: $width-core;
+
+  @media (max-width: $width-full-px) {
+    width: ($width-full - $width-gutter) !important; // since gutters are cut in half
+    min-width: ($width-full - $width-gutter) !important; // since gutters are cut in half
+  }
+}
+
+.block {
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+.snug-bottom {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
