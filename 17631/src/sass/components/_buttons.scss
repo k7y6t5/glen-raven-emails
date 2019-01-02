@@ -6,7 +6,9 @@
  */
 
 .btn {
-  @media only screen and (max-width: $width-full-px) {
-    width: 90%;
+  @if ($responsive) {
+    @media only screen and (max-width: $width-full-px) {
+      width: 90%;
+    }
   }
 }

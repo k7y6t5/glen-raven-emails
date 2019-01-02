@@ -1,4 +1,9 @@
 /**
+ * Responsive flag
+ *
+ * see helpers/_layout.scss
+ */
+/**
  * Widths
  *
  * $width-full, $width-gutter, and $width-core are required
@@ -213,13 +218,6 @@ sup {
   min-width: 600px;
 }
 
-@media (max-width: 600px) {
-  .width-main {
-    width: 96% !important;
-    min-width: 96% !important;
-  }
-}
-
 .width-full {
   width: 100%;
   min-width: 100%;
@@ -230,23 +228,9 @@ sup {
   min-width: 8.33333%;
 }
 
-@media (max-width: 600px) {
-  .width-gutter {
-    width: 4.16667% !important;
-    min-width: 4.16667% !important;
-  }
-}
-
 .width-core {
   width: 83.33333%;
   min-width: 83.33333%;
-}
-
-@media (max-width: 600px) {
-  .width-core {
-    width: 91.66667% !important;
-    min-width: 91.66667% !important;
-  }
 }
 
 .block {
@@ -347,12 +331,6 @@ span {
  * For rectangular buttons, apply .btn to the wrapping <td>
  * and .btn__link to the child <a>
  */
-@media only screen and (max-width: 600px) {
-  .btn {
-    width: 90%;
-  }
-}
-
 /**
  * Footer
  */
