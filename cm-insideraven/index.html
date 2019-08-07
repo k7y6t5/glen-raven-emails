@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=320, target-densitydpi=device-dpi">
+<meta content="telephone=no" name="format-detection">
+<style type="text/css">
+/* Mobile-specific Styles */
+@media only screen and (max-width: 660px) {
+table[class=w0], td[class=w0] { width: 0 !important; }
+table[class=w10], td[class=w10], img[class=w10] { width:10px !important; }
+table[class=w15], td[class=w15], img[class=w15] { width:5px !important; }
+table[class=w30], td[class=w30], img[class=w30] { width:10px !important; }
+table[class=w60], td[class=w60], img[class=w60] { width:10px !important; }
+table[class=w125], td[class=w125], img[class=w125] { width:80px !important; }
+table[class=w130], td[class=w130], img[class=w130] { width:55px !important; }
+table[class=w140], td[class=w140], img[class=w140] { width:90px !important; }
+table[class=w160], td[class=w160], img[class=w160] { width:180px !important; }
+table[class=w170], td[class=w170], img[class=w170] { width:100px !important; }
+table[class=w180], td[class=w180], img[class=w180] { width:80px !important; }
+table[class=w195], td[class=w195], img[class=w195] { width:80px !important; }
+table[class=w220], td[class=w220], img[class=w220] { width:80px !important; }
+table[class=w240], td[class=w240], img[class=w240] { width:180px !important; }
+table[class=w255], td[class=w255], img[class=w255] { width:185px !important; }
+table[class=w275], td[class=w275], img[class=w275] { width:135px !important; }
+table[class=w280], td[class=w280], img[class=w280] { width:135px !important; }
+table[class=w300], td[class=w300], img[class=w300] { width:140px !important; }
+table[class=w325], td[class=w325], img[class=w325] { width:95px !important; }
+table[class=w360], td[class=w360], img[class=w360] { width:140px !important; }
+table[class=w410], td[class=w410], img[class=w410] { width:180px !important; }
+table[class=w470], td[class=w470], img[class=w470] { width:200px !important; }
+table[class=w580], td[class=w580], img[class=w580] { width:280px !important; }
+table[class=w640], td[class=w640], img[class=w640] { width:300px !important; }
+table[class*=hide], td[class*=hide], img[class*=hide], p[class*=hide], span[class*=hide] { display:none !important; }
+table[class=h0], td[class=h0] { height: 0 !important; }
+.header-from{font-size: 10px !important; line-height: 20px; text-align: center !important;}
+p[class=footer-content-left] { text-align: center !important; }
+#headline p { font-size: 30px !important; }
+.article-content, #left-sidebar{ -webkit-text-size-adjust: 90% !important; -ms-text-size-adjust: 90% !important; }
+.header-content, .footer-content-left {-webkit-text-size-adjust: 80% !important; -ms-text-size-adjust: 80% !important;}
+img { height: auto; line-height: 100%;}
+.footer-content-address, .footer-content-phone {color: #ffffff !important; font-size: 10px !important;}
+}
+/* Client-specific Styles */
+#outlook a { padding: 0; }	/* Force Outlook to provide a "view in browser" button. */
+body { width: 100% !important; }
+.ReadMsgBody { width: 100%; }
+.ExternalClass { width: 100%; display:block !important; } /* Force Hotmail to display emails at full width */
+/* Reset Styles */
+/* Add 100px so mobile switch bar doesn't cover street address. */
+body { background-color: #ffffff; margin: 0; padding: 0; -webkit-font-smoothing: antialiased; }
+img { outline: none; text-decoration: none; display: block;}
+br, strong br, b br, em br, i br { line-height:100%; }
+h1, h2, h3, h4, h5, h6 { line-height: 100% !important; -webkit-font-smoothing: antialiased; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: blue !important; }
+h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {	color: red !important; }
+/* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited { color: purple !important; }
+/* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+table, table td, table tr { border-collapse: collapse; }
+.yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span {
+color: black; text-decoration: none !important; border-bottom: none !important; background: none !important;
+}	/* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+/* This most probably won't work in all email clients. Don't include code blocks in email. */
+code {
+  white-space: normal;
+  word-break: break-all;
+}
+#background-table { background-color: #ffffff; }
+/* Webkit Elements */
+#top-bar { antialiased; background-color: #ffffff; color: #222222; }
+#top-bar a { font-weight: bold; color: #222222; text-decoration: none;}
+#footer {-webkit-font-smoothing: antialiased; }
+/* Fonts and Content */
+body, td { font-family: Verdana, Lucida Sans, Helvetica, Arial, sans-serif; }
+.header-content, .footer-content-left, .footer-content-right { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+/* Prevent Webkit and Windows Mobile platforms from changing default font sizes on header and footer. */
+.header-content { font-size: 11px; color: #333333; }
+.header-content a { font-weight: normal; color: #333333; text-decoration: none; }
+#headline p { color: #333333; font-family: Verdana, Lucida Sans, Helvetica, Arial, sans-serif; font-size: 36px; text-align: center; margin-top:0px; margin-bottom:30px; }
+#headline p a { color: #e68fe6; text-decoration: none; }
+.article-title {font-size: 18px; line-height:25px; color: #6ba643; font-weight:bold; margin-top:0px; margin-bottom:0px; font-family: Verdana, Lucida Sans, Helvetica, Arial, sans-serif; text-transform: uppercase; text-align: left; }
+.article-title-full {font-size: 18px; line-height:25px; color: #6ba643; font-weight:bold; margin-top:0px; font-family: Verdana, Lucida Sans, Helvetica, Arial, sans-serif; margin-bottom: 0; text-align: left; text-transform: uppercase; }
+.article-title-image-right{font-size: 20px; font-weight: normal; font-family: Verdana, Lucida Sans, Helvetica, Arial, sans-serif;color: #333333;}
+.article-title-image-left{font-size: 20px; font-weight: normal; font-family: Verdana, Lucida Sans, Helvetica, Arial, sans-serif;color: #333333;}
+.article-title a { color: #575140; text-decoration: none;}
+.article-title.with-meta {margin-bottom: 0;}
+.article-meta { font-size: 13px; line-height: 20px; color: #ccc; font-weight: bold; margin-top: 0;}
+.article-content {font-size: 13px; mso-line-height-rule: exactly; line-height: 22px; color: #333333; margin-top: 0px; margin-bottom: 0px; font-family: Verdana, Lucida Sans, Helvetica, Arial, sans-serif; }
+.article-content a { color: #312c26; font-weight:bold; text-decoration:none; }
+.article-content img { max-width: 100% }
+.article-content ol, .article-content ul { margin-top:0px; margin-bottom:18px; margin-left:19px; padding:0; }
+.article-content li { font-size: 14px; mso-line-height-rule: exactly; line-height: 18px; color: #666666; }
+.article-content li a { color: #54687c; text-decoration:underline; }
+.article-content p {margin-bottom: 8px; margin-top: 0; margin-left: 0; margin-right: 0;}
+.article-content p {mso-line-height-rule: exactly; line-height: 22px; }
+.footer-content-address { font-size: 11px; font-weight: normal; line-height: 12px; color: #ffffff; margin-top: 5px; margin-bottom: 5px; }
+.footer-content-phone { font-size: 11px; font-weight: normal; line-height: 12px; color: #ffffff; margin-top: 0px; margin-bottom: 15px; }
+.footer-content-contact a { color: #cdcac1; font-weight: bold; text-decoration: none; }
+.footer-content-right { font-size: 11px; line-height: 16px; color: #cdcac1; margin-top: 0px; margin-bottom: 15px; }
+.footer-content-right a { color: #cdcac1; font-weight: bold; text-decoration: none; }
+#footer { background-color: #6ba643; color: #ffffff; }
+#footer a {text-decoration: none; }
+#permission-reminder { white-space: normal; }
+#street-address { color: #333333; white-space: normal; }
+.links{color: #333333; font-size: 12px;}
+.links a {color: #333333;}
+p {margin-bottom: 0 ;}
+</style>
+<!--[if gte mso 9]>
+<style _tmplitem="198" >
+.article-content ol, .article-content ul {
+   margin: 0 0 0 24px;
+   padding: 0;
+   list-style-position: inside;
+}
+</style>
+<![endif]--></head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" id="background-table">
+	<tbody>
+		<tr>
+			<td width="100%">
+		        <table id="top-bar" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
+				    <tbody>
+				    	<tr>
+					        <td class="w640" width="640" valign="middle" align="left">
+					            <table class="w325" width="350" cellpadding="0" cellspacing="0" border="0">
+					                <tbody><tr><td class="w325" width="350" height="8"></td></tr>
+					            	</tbody>
+					            </table>
+					            <div class="header-content" style="text-align: center;"><unsubscribe>Unsubscribe.</unsubscribe><span style="padding-right: 5px;"></span><webversion>View</webversion> in your browser.<span style="padding-right: 5px;"></span>
+					            </div>
+					            <table class="w325" width="350" cellpadding="0" cellspacing="0" border="0">
+					                <tbody><tr><td class="w325" width="350" height="8"></td></tr>
+					            	</tbody>
+					            </table>
+					        </td>
+				        </tr>
+					</tbody>
+			</table>
+		    </td>
+		</tr>
+
+		<tr>
+		<td align="center" bgcolor="#ffffff">
+        	<table class="w640" style="margin:0 10px;" width="640" cellpadding="0" cellspacing="0" border="0">
+            	<tbody>
+                <tr>
+	                <td id="header" class="w640" width="640" align="center" bgcolor="#FFFFFF">
+						    		<div align="center" style="text-align: center">
+						        	<img id="customHeaderImage" label="Header Image" editable="true" width="640" src="/images/header-image.jpg" class="w640" border="0" align="top" style="display: inline">
+						    		</div>
+									</td>
+								</tr>
+                <tr><td bgcolor="6ba643" class="w640" width="640" height="10"></td></tr>
+                <tr>
+                	<td bgcolor="6ba643" class="w640" width="640" height="30">
+                		<table border="0" cellpadding="0" cellspacing="0">
+                			<tr>
+                				<td width="43"></td>
+                				<td class="header-from" width="554" style="color: #333333; font-weight: bold; font-size: 11px;">FROM LEIB OEHMIG TO GLEN RAVEN SHAREHOLDERS<img style="display: inline-block; vertical-align: middle;" src="/images/header-logo.jpg" alt="Glen Raven" /><currentmonthname> <currentday>, <currentyear>
+                				</td>
+                				<td width="43"></td>
+                			</tr>
+                		</table>
+                	</td>
+                </tr>
+                <tr><td bgcolor="6ba643" class="w640" width="640" height="50"></td></tr>
+
+                <tr><td class="w640" width="640" height="25"></td></tr>
+
+
+<tr id="simple-content-row"><td class="w640" width="640" bgcolor="#ffffff">
+<table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+        	<tr>
+             <td class="w640" width="640">
+                <repeater>
+                    <layout label="Text only">
+                        <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
+                            <tbody>
+		                        	<tr>
+		                        		<td class="w640" width="640" height="40">
+		                        		<p align="center" class="article-title" style="margin-bottom: 0; mso-line-height-rule: exactly; line-height: 25px; text-transform: uppercase;"><singleline label="Title">Asking For Your Input Into Making Shareholder's Newsletter Stronger</singleline></p>
+		                        		</td>
+		                        	</tr>
+		                        	<tr>
+		                        		<td class="w640" width="640" height="25"></td>
+		                        	</tr>
+
+		                        	<tr>
+		                              <td class="w640" width="640">
+		                              	<table border="0" cellpadding="0" cellspacing="0">
+		                              		<tbody>
+		                              		<tr>
+
+		                              			<td class="w640" width="640">
+
+			                                    <div align="left" class="article-content" style="padding-left:0px; padding-right:0px; margin-left: 0; margin-right: 0; mso-line-height-rule: exactly; line-height:22px;">
+			                                        <multiline label="Description"><p>We began the Inside Raven electronic newsletter for shareholders in 2010 with a goal of improving the frequency and the quality of communications with shareholders. With this issue, we would like to invite your comments on the effectiveness of this electronic newsletter and how it can be improved.
+			                                        <br>
+			                                        <br>
+			                                        Would you please send me an email and provide any comments on past issues and suggestions for the future? We are currently exploring a number of ideas for improving the newsletter, and your input will be very helpful.
+			                                        <br>
+			                                        <br>
+			                                        Please email me at: <a href="#">loehmig@glenraven.com</a>
+			                                        <br>
+			                                        <br>
+			                                        Thank you.
+			                                        </p>
+			                                        </multiline>
+		                                    	</div>
+		                                    	</td>
+
+		                                    	</tr>
+		                                    	</tbody>
+		                                 </table>
+		                              </td>
+		                           </tr>
+		                           <tr><td class="w640" width="640" height="25"></td></tr>
+		                           <tr><td width="640" class="w640" height="5" bgcolor="6ba643"></td></tr>
+                            	<tr><td class="w640" width="640" height="25"></td></tr>
+	                        	</tbody>
+	                        </table>
+	                    </layout>
+
+                    <layout label="Text with full-width image">
+                        <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
+                            <tbody>
+	                            <tr>
+	                                <td class="w640" width="640" height="40">
+	                                    <p align="bottom" class="article-title-full" style="mso-line-height-rule: exactly; line-height: 25px; margin-bottom: 0; padding-bottom: 0; mso-table-lspace:0; mso-table-rspace:0; text-transform: uppercase;"><singleline label="Title">Asking For Your Input Into Making Shareholder's Newsletter Stronger</singleline></p>
+	                                </td>
+	                            </tr>
+	                            <tr><td class="w640" width="640" height="10"></td></tr>
+	                            <tr>
+	                                <td class="w640" width="640"><img src="/images/full.jpg" editable="true" label="Image" class="w640" width="640" border="0" style="margin-top: 0; padding-top: 0; display: block;"></td>
+	                            </tr>
+	                            <tr><td class="w640" width="640" height="25"></td></tr>
+
+	                            <tr>
+	                                <td class="w640" width="640">
+	                                	<table border="0" cellpadding="0" cellspacing="0">
+	                                		<tbody>
+	                                		<tr>
+			                                    <td class="w640" width="640">
+				                                    <div align="left" class="article-content" style="padding-left:0px; padding-right:0px; margin-left: 0; margin-right: 0; mso-line-height-rule: exactly; line-height:22px;">
+				                                        <multiline label="Description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Proin eget tortor risus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</multiline>
+				                                     </div>
+				                                 </td>
+			                                </tr>
+			                                </tbody>
+			                            </table>
+	                                </td>
+	                            </tr>
+
+
+	                            <tr><td class="w640" width="640" height="25"></td></tr>
+	                            <tr><td width="640" class="w640" height="5" bgcolor="6ba643"></td></tr>
+	                            <tr><td class="w640" width="640" height="25"></td></tr>
+                        	</tbody>
+                        </table>
+                    </layout>
+
+                    <layout label="Text with right-aligned image">
+                        <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
+                            <tbody>
+                            	<tr>
+	                                <td class="w640" width="640">
+	                                    <table cellpadding="0" cellspacing="0" border="0" align="right" style="margin-top:0px;">
+	                                        <tbody>
+	                                        <tr>
+	                                            <td class="w30" width="30"></td>
+	                                            <td><img editable="true" label="Image" class="w300" width="300" border="0"></td>
+	                                            <td class="w30" width="15"></td>
+	                                        </tr>
+	                                        <tr><td class="w30" width="0" height="25"></td><td></td></tr>
+	                                    	</tbody>
+	                                    </table>
+	                                    <div align="left" class="article-content" style="margin-left: 0; margin-right: 0; mso-line-height-rule: exactly; line-height:22px;">
+	                                    	<p class="article-title-image-right" style="color: #6ba643; font-weight: bold; margin-bottom: 15px; text-transform: uppercase;"><singleline label="Title">Right Aligned Image</singleline></p>
+	                                        <multiline label="Description">Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuada. Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</multiline>
+	                                    </div>
+	                                 </td>
+                                </tr>
+                                <tr><td class="w640" width="640" height="25"></td></tr>
+                                <tr><td width="640" class="w640" height="5" bgcolor="6ba643"></td></tr>
+                                <tr><td class="w640" width="640" height="25"></td></tr>
+                        	</tbody>
+                        </table>
+                    </layout>
+
+                    <layout label="Text with left-aligned image">
+                        <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
+                            <tbody>
+	                            <tr>
+	                                <td class="w640" width="640">
+	                                    <table cellpadding="0" cellspacing="0" border="0" align="left" style="margin-top: 0px;">
+	                                        <tbody><tr>
+	                                        	<td class="w30" width="15"></td>
+	                                            <td><img editable="true" label="Image" class="w300" width="300" border="0"></td>
+	                                            <td class="w30" width="30"></td>
+	                                        </tr>
+	                                        <tr><td></td><td class="w30" width="15" height="25"></td></tr>
+	                                    </tbody></table>
+	                                    <div align="left" class="article-content" style="margin-left: 0; margin-right: 0; mso-line-height-rule: exactly; line-height:22px;">
+	                                    	<p class="article-title-image-left" style="color: #6ba643; font-weight: bold; margin-bottom: 15px; text-transform: uppercase;"><singleline label="Title">Left Aligned Image</singleline>
+	                                    	</p>
+	                                        <multiline label="Description">One of the most important investments we have made in the service infrastructure of Trivantage was the recent launch of new information technology for order and warehouse management and e-commerce. This software represents a substantial investment to update our systems to current technology that provides immediate efficiencies while establishing a platform for continued growth and service enhancements in the future.
+	                                        Our new ecommerce service is modeled after the functionality of popular consumer online sites, such as Amazon. The system is extremely easy to use and offers a robust menu of value added features, such as comparative product information and order history. Ecommerce sales currently represent about 23 percent of total Trivantage sales volume; with the new ecommerce system in place, we anticipate that volume growing to 30 percent or more. </multiline>
+	                                    </div>
+	                                </td>
+	                            </tr>
+                              <tr><td class="w640" width="640" height="25"></td></tr>
+                              <tr><td width="640" class="w640" height="5" bgcolor="6ba643"></td></tr>
+                              <tr><td class="w640" width="640" height="25"></td></tr>
+                        	</tbody>
+                        </table>
+                    </layout>
+
+             </repeater>
+
+		    </td></tr><tr>
+		    <td class="w640" width="640" height="81" align="center" style="padding-bottom: 10px;">
+		    <img src="/images/signature.jpg" alt="Glen Raven" />
+		    </td>
+		    </tr>
+
+		    <tr>
+		    <td class="w640" width="640">
+		    <table id="footer" class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="6ba643">
+		        <tbody><tr><td class="w640" width="640" height="10"></td></tr>
+		        <tr>
+		            <td class="w640" width="650" valign="top">
+		            <p align="center" class="footer-content-address" style="color: #ffffff; font-weight: normal; text-decoration: none;">Glen Raven, Inc. · 1831 North Park Avenue · Glen Raven, NC · 27217-1100 · USA</p>
+		            <p align="center" class="footer-content-phone" style="color: #ffffff; font-weight: normal; text-decoration:none;">PH: 336.227.6211 · FAX: 336.226.8133</p>
+		            </td>
+		        </tr>
+
+		    	</tbody>
+		    </table>
+			</td>
+		    </tr>
+
+		    <tr>
+		    <td class="w640" width="640" height="60" align="center" style="padding-top: 20px; padding-bottom: 20px;">
+		    <img src="/images/small-logo.jpg" alt="Glen Raven" />
+		    </td>
+		    </tr>
+
+		    <tr>
+			    <td>
+			    <p class="links" align="center" style="color: #333333;"><a style="text-decoration: none; color: #333333;" href="https://www.glenraven.com">glenraven.com</a>  |  <a style="text-decoration: none; color: #333333;" href="https://www.sunbrella.com">sunbrella.com</a>  |  <a style="text-decoration: none; color: #333333;" href="https://fsh.glenraven.com">fsh.glenraven.com</a>
+			    </p>
+			    </td>
+		    </tr>
+
+		    <tr>
+		    	<td class="w640" width="640" height="40">
+		    	</td>
+		    </tr>
+
+
+
+	</tbody>
+</table>
+
+
+</td></tr></tbody>
+</table>
+</td></tr></tbody>
+</table>
+</body>
+</html>
